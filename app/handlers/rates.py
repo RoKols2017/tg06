@@ -1,3 +1,6 @@
+"""
+Обработчик получения и отображения курсов валют.
+"""
 from aiogram import Router, F
 from aiogram.types import Message
 from app.utils.exchange import get_rates

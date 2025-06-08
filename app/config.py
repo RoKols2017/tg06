@@ -37,6 +37,9 @@ class Settings(BaseSettings):
     # 4. VERIFY_SSL_CERTS → verify_ssl_certs
     verify_ssl_certs: bool = Field(True, alias="VERIFY_SSL_CERTS")
 
+    # 5. EXCHANGE_API_KEY → exchange_api_key
+    exchange_api_key: SecretStr = Field(..., alias="EXCHANGE_API_KEY")
+
     model_config: SettingsConfigDict = SettingsConfigDict(
         env_file=".env",
         env_file_encoding="utf-8",

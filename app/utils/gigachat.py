@@ -1,3 +1,6 @@
+"""
+Утилиты для интеграции с GigaChat: получение LLM и генерация советов.
+"""
 import asyncio
 from functools import cache
 from langchain_gigachat.chat_models import GigaChat

@@ -1,6 +1,10 @@
 from aiogram.types import (ReplyKeyboardMarkup, KeyboardButton,
                            ReplyKeyboardRemove)
 
+"""
+Клавиатуры для основного меню Telegram-бота.
+"""
+
 def main_menu() -> ReplyKeyboardMarkup:
     """Главное меню бота (Reply-клавиатура)."""
     return ReplyKeyboardMarkup(
